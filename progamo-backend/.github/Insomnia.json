@@ -1,0 +1,252 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-12-06T16:23:20.736Z",
+  "__export_source": "insomnia.desktop.app:v2020.5.1",
+  "resources": [
+    {
+      "_id": "req_9b5aaedd753f4dd1889a0eb6a5a95a65",
+      "parentId": "fld_eb12daa9277f41c3bb62f5d363dd68ae",
+      "modified": 1607195927218,
+      "created": 1607195840649,
+      "url": "{{ _.baseUrl }}/category",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\":\"Hamburguer\",\n\t\"description\":\"Hanburguer feito em casa\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_baa587921ebb4092bdf2194177cf7142"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1607195840649,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_eb12daa9277f41c3bb62f5d363dd68ae",
+      "parentId": "wrk_919a18d58ad64abb8739de4ac3cc97a5",
+      "modified": 1607195825639,
+      "created": 1607195825639,
+      "name": "Category",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1607195825639,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_919a18d58ad64abb8739de4ac3cc97a5",
+      "parentId": null,
+      "modified": 1606712481351,
+      "created": 1606712481351,
+      "name": "MegaLanche",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_765461b6c2474c89b2ec78596ef80516",
+      "parentId": "fld_142e909f26e34071a39203372d7907fd",
+      "modified": 1607129761563,
+      "created": 1607003961323,
+      "url": "{{ baseUrl }}/users",
+      "name": "Create Users",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"first_name\": \"Manoel\",\n\t\"last_name\": \"Neto\",\n\t\"email\": \"t3@t.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_54691a80b9084329b916c1b359318fc8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1606334277757,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_142e909f26e34071a39203372d7907fd",
+      "parentId": "wrk_919a18d58ad64abb8739de4ac3cc97a5",
+      "modified": 1606717752544,
+      "created": 1606717752544,
+      "name": "Users",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1606717752544,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_cc032f8b655745eaaaf17a0cc995e99f",
+      "parentId": "fld_37e9812ef2ee4a5eb11a8194d748d4eb",
+      "modified": 1607270402011,
+      "created": 1607053292314,
+      "url": "{{ baseUrl }}/sessions",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"t@t.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_54691a80b9084329b916c1b359318fc8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1607269992920,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_37e9812ef2ee4a5eb11a8194d748d4eb",
+      "parentId": "fld_142e909f26e34071a39203372d7907fd",
+      "modified": 1607270436425,
+      "created": 1607053292302,
+      "name": "Session",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1606334277707,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_97724633114e41be9c2120b677b37c80",
+      "parentId": "fld_37e9812ef2ee4a5eb11a8194d748d4eb",
+      "modified": 1607270409902,
+      "created": 1607269992870,
+      "url": "{{ baseUrl }}/recover",
+      "name": "Forgot Password",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\":\"t@t.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e64319fbb37c4ef08d61cbd03c9ca00a"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1607269992870,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_56f991b3d4d162935438c714858dbd708a8fe064",
+      "parentId": "wrk_919a18d58ad64abb8739de4ac3cc97a5",
+      "modified": 1606712481402,
+      "created": 1606712481402,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1606712481402,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_56f991b3d4d162935438c714858dbd708a8fe064",
+      "parentId": "wrk_919a18d58ad64abb8739de4ac3cc97a5",
+      "modified": 1606712481405,
+      "created": 1606712481405,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_cbecfa943c0c47c5b01ff3560dc48fc1",
+      "parentId": "wrk_919a18d58ad64abb8739de4ac3cc97a5",
+      "modified": 1606712481356,
+      "created": 1606712481356,
+      "fileName": "MegaLanche",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_0c32b11dffd44d6394762f43f2938268",
+      "parentId": "env_56f991b3d4d162935438c714858dbd708a8fe064",
+      "modified": 1607119244191,
+      "created": 1606712491519,
+      "name": "Development",
+      "data": {
+        "baseUrl": "http://localhost:3333/v1"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "baseUrl"
+        ]
+      },
+      "color": "#ff00bb",
+      "isPrivate": false,
+      "metaSortKey": 1606712491519,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_249b1d479c994fbfb20c3b3d21fe3b0c",
+      "parentId": "env_56f991b3d4d162935438c714858dbd708a8fe064",
+      "modified": 1606712579302,
+      "created": 1606712501682,
+      "name": "Production",
+      "data": {
+        "baseUrl": "http://"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "baseUrl"
+        ]
+      },
+      "color": "#3fc723",
+      "isPrivate": false,
+      "metaSortKey": 1606712501682,
+      "_type": "environment"
+    }
+  ]
+}
